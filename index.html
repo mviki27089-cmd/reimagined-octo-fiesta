@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bagaimana perasaanmu hari ini?</h1>
+        
+        <div class="mood-options">
+            <button class="mood-btn" data-mood="Senang" data-quote="Pertahankan energi positif itu!">😊<br>Senang</button>
+            <button class="mood-btn" data-mood="Sedih" data-quote="Tak apa untuk merasa sedih. Besok akan lebih baik.">😢<br>Sedih</button>
+            <button class="mood-btn" data-mood="Marah" data-quote="Tarik napas dalam-dalam. Semuanya akan terkendali.">😡<br>Marah</button>
+            <button class="mood-btn" data-mood="Tenang" data-quote="Kedamaian adalah kunci kebahagiaan.">😌<br>Tenang</button>
+            <button class="mood-btn" data-mood="Lelah" data-quote="Istirahatlah sejenak, kamu sudah berusaha keras!">😴<br>Lelah</button>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <h3 id="mood-display"></h3>
+            <p id="quote-display"></p>
+        </div>
+
+        <hr>
+        <h3>Riwayat Suasana Hati</h3>
+        <ul id="history-list"></ul>
+        <button id="clear-btn">Hapus Riwayat</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
